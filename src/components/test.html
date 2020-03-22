@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        html{
+            font-size: 16px;
+        }
+        .class {
+            border: 1px solid black;
+            font-size: 10px;
+        }
+
+        .class1 {
+            width: 20%;
+            height: 10%;
+            background-color: blueviolet;
+            float: left;
+            font-size: 5em;
+        }
+
+        .class2 {
+            width: 20%;
+            height: 10%;
+            float: left;
+            background-color: red;
+            font-size: 2rem;
+
+        }
+
+        .class3 {
+            width: 20%;
+            height: 10%;
+            background-color: yellow;
+            float: right;
+
+        }
+
+        .class:after {
+            display: block;
+            content: "";
+            clear: both;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<script>
+    function change() {
+        document.getElementById('id').innerText = "<h1>asdasdas</h1>"
+        alert(location.href)
+    }
+</script>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="id">1111111111</div>
+    <button onclick="change()">更改</button>
+    <div class="class" >
+        <div class="class1" hidden="hidden">盒子1</div>
+        <div class="class2">盒子2</div>
+        <div class="class3">盒子3</div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
